@@ -1,0 +1,15 @@
+/*div{
+  width: 100px;
+  height: 100px;
+  font-size: 20px;
+  color:red;
+  background: url('./assets/bill.png');
+}*/
+
+.shopping-list{
+  background-color: #F5F5F5;
+}
+
+.shopping-list h1{
+  color:red;
+}
