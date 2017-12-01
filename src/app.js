@@ -11,6 +11,7 @@ class ShoppingList extends React.Component {
           <li>Instagram</li>
           <li>WhatsApp</li>
           <li>Oculus</li>
+          <li>FaceBook</li>
         </ul>
       </div>
     );
