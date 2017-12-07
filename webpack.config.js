@@ -6,7 +6,7 @@ const webpack = require('webpack');
 
 module.exports = {
   entry: {
-    app: './src/app.js',
+    app: './src/app.jsx',
     vendor: './src/vendor.js'
   },
   output: {
@@ -35,7 +35,7 @@ module.exports = {
         }],
       },
       {
-        test: /\.js$/,
+        test: /\.(js|jsx)$/,
         exclude: /node_modules/,
         loader: "babel-loader"
       }
