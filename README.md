@@ -30,4 +30,32 @@ webpack
 待做的事情：
 1 放弃jQ操作dom的想法，比较和Angular2组件化的异同
 2 做一个todolist的demo，运用以上的知识、思想、原则、步骤（进行演绎）
+
+--------------------------
+
+有限状态机的三个特征（from ruanyifeng）:
+* 状态（state）总数是有限的；
+* 任一时刻，只处在一种状态之中；
+* 某种条件下，会从一种状态转变（transition）到另一种状态；
+
+有限状态机三体版：
+* 变化是状态的第一要素；
+* 状态不断变化，但状态总数有限（任一时刻，只处在一种状态之中；某种条件下，会从一种状态转变到另一种状态）
+
+鄙视链和需求爆炸
+
+最终导出 react + redux 是最佳解决方案
+
+-----------------------------------
+
+异步和变化 等于 可乐和曼妥思
+时间旅行
+
+what is Redux？
+Redux is a predictable state container for JavaScript apps.
+Redux 是 JavaScript 状态容器，提供可预测化的状态管理。
+redux动机篇
+https://redux.js.org/docs/introduction/Motivation.html
+
+
 --------------------------
