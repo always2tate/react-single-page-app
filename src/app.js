@@ -2,24 +2,29 @@ import './style.css';
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-class ShoppingList extends React.Component {
+class FilterableProductTable extends React.Component {
   render() {
+    let products = this.props.productList.map((item,index) =>
+      <li key={index}>
+        {item.name}
+      </li>
+    );
     return (
-      <div className="shopping-list">
-        <h1>Shopping List for {this.props.name}</h1>
-        <ul>
-          <li>Instagram</li>
-          <li>WhatsApp</li>
-          <li>Oculus</li>
-          <li>FaceBook</li>
-          <li>WeChat</li>
-        </ul>
-      </div>
+      <ul>{products}</ul>
     );
   }
 }
 
+var data = [
+  {category: "Sporting Goods", price: "$49.99", stocked: true, name: "Football"},
+  {category: "Sporting Goods", price: "$9.99", stocked: true, name: "Baseball"},
+  {category: "Sporting Goods", price: "$29.99", stocked: false, name: "Basketball"},
+  {category: "Electronics", price: "$99.99", stocked: true, name: "iPod Touch"},
+  {category: "Electronics", price: "$399.99", stocked: false, name: "iPhone 5"},
+  {category: "Electronics", price: "$199.99", stocked: true, name: "Nexus 7"}
+];
+
 ReactDOM.render(
-  <ShoppingList name="Mark" />,
+  <FilterableProductTable productList={data}/>,
    document.body.appendChild(document.createElement('div'))
 );
