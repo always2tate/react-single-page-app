@@ -1,20 +1,11 @@
 Code Spliting
 Single Page Application
 Server Rendering
-
 ----------------------------------------------------------------
-
-react          
-redux         
-react-router      
-webpack
-
+react、redux、react-router、webpack
 这几个部分涉及 组件化 数据驱动UI 异步处理 单页应用 代码分割 等核心概念
-
 现在要做的事情是：把它们串起来（去寻找最佳实践）
-
 -----------------------------------------------------------------
-
 官网介绍react理念章节中的demo，既是对前面章节知识概念的运用（演绎），同时
 还深度解读了react的组件化思想（包括如何一步步构建一系列具有交互功能的组件）：
 1 根据UI确定组件层级
@@ -42,7 +33,7 @@ webpack
 * 变化是状态的第一要素；
 * 状态不断变化，但状态总数有限（任一时刻，只处在一种状态之中；某种条件下，会从一种状态转变到另一种状态）
 
-鄙视链和需求爆炸
+鄙视链（程序员的自我反思与追求）和需求爆炸
 
 最终导出 react + redux 是最佳解决方案
 
@@ -56,6 +47,14 @@ Redux is a predictable state container for JavaScript apps.
 Redux 是 JavaScript 状态容器，提供可预测化的状态管理。
 redux动机篇
 https://redux.js.org/docs/introduction/Motivation.html
+
+----------------------------------------
+
+2017.12.07
+个人觉得“有限状态自动机”是 react 和 redux 的哲学基础
+react 和 redux 的作者 根据 有限状态自动机的原理进行演绎，创造出了让一切变得简单，开发
+体验很棒的产品
+
 
 
 --------------------------
