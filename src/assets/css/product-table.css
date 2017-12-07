@@ -1,0 +1,14 @@
+.product-table{
+  display: table;
+  width: 100%;
+}
+
+.product-table .product-table-header{
+  display: table-row;
+  width: 100%;
+}
+
+.product-table .product-table-header .product-title-price{
+  display: table-cell;
+  width: 50%;
+}

@@ -1,26 +1,21 @@
-import './style.css';
+import './assets/css/style.css';
 import React from 'react';
 import ReactDOM from 'react-dom';
-import SearchBar from './search-bar'
+import SearchBar from './search-bar';
+import ProductTable from './product-table';
 
 class FilterableProductTable extends React.Component {
   render() {
-    let products = this.props.productList.map((item,index) =>
-      <li key={index}>
-        {item.name}
-      </li>
-    );
     return (
       <div>
         <SearchBar/>
-        <ul>{products}</ul>
+        <ProductTable productList={this.props.productList}/>
       </div>
-
     );
   }
 }
 
-var data = [
+let data = [
   {category: "Sporting Goods", price: "$49.99", stocked: true, name: "Football"},
   {category: "Sporting Goods", price: "$9.99", stocked: true, name: "Baseball"},
   {category: "Sporting Goods", price: "$29.99", stocked: false, name: "Basketball"},
