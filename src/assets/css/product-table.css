@@ -11,4 +11,23 @@
 .product-table .product-table-header .product-title-price{
   display: table-cell;
   width: 50%;
+  text-align: center;
+}
+
+.product-table .product-catetogry-row{
+  display: table-row;
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+}
+
+.product-table .product-row{
+  display: table-row;
+  width: 100%;
+}
+
+.product-table .product-row .product-row-name-price{
+  display: table-cell;
+  width: 50%;
+  text-align: center;
 }
