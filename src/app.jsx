@@ -1,6 +1,7 @@
 import './style.css';
 import React from 'react';
 import ReactDOM from 'react-dom';
+import SearchBar from './search-bar'
 
 class FilterableProductTable extends React.Component {
   render() {
@@ -10,7 +11,11 @@ class FilterableProductTable extends React.Component {
       </li>
     );
     return (
-      <ul>{products}</ul>
+      <div>
+        <SearchBar/>
+        <ul>{products}</ul>
+      </div>
+
     );
   }
 }

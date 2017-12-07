@@ -53,6 +53,9 @@ module.exports = {
     new HtmlWebpackPlugin({
       title: 'Good!!'
     })
-  ]
+  ],
+  resolve: {
+      extensions: ['.js', '.jsx', '.less', '.scss', '.css'] //后缀名自动补全
+  }
 
 };
