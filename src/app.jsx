@@ -5,11 +5,21 @@ import SearchBar from './search-bar';
 import ProductTable from './product-table';
 
 class FilterableProductTable extends React.Component {
+
+  constructor(props){
+    super(props);
+    this.state = { filterText:"",isStockOnly:false };
+  }
+
   render() {
+
+    //To compute filtered List via states and props in here.
+
+
     return (
       <div>
-        <SearchBar/>
-        <ProductTable productList={this.props.productList}/>
+        <SearchBar filterText={this.state.filterText} isStockOnly={this.state.isStockOnly}/>
+        <ProductTable filterText={this.state.filterText}  isStockOnly={this.state.isStockOnly}  productList={this.props.productList}/>
       </div>
     );
   }
