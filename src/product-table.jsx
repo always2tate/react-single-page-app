@@ -10,7 +10,7 @@ class ProductTable extends React.Component {
     let curCategory = "";
     let _self = this;
     this.props.productList.forEach(function(product){
-
+        //To compute filtered List via states and props in here.
       if (product.name.indexOf(_self.props.filterText) === -1 || (!product.stocked && _self.props.isStockOnly)) {
         return;
       }

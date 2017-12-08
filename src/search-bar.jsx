@@ -9,11 +9,11 @@ class SearchBar extends React.Component {
   }
 
   handleFilterTextChange(event){
-
+    this.props.onHandleFilterTextChange(event.target.value);
   }
 
   handleStockChange(event){
-
+    this.props.onHandleInStockOnlyChange(event.target.checked);
   }
 
   render() {
